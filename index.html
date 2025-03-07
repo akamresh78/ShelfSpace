@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShelfSpace Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .profile {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none; 
+            position: absolute;
+            top: 100%;
+            right: 0; 
+            background-color:#b3ddfb;
+            width: 180px; 
+            box-shadow: 0px 16px 16px rgba(0, 0, 0, 0.776);
+            padding: 10px;
+            border-radius: 8px;
+            z-index: 1;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-weight: bold;
+            border:2px solid black;
+        }
+
+        .dropdown-content p, .dropdown-content a {
+            margin: 0;
+            padding: 8px 0;
+            color: #01080caa;
+        }
+
+        .dropdown-content a {
+            text-decoration: none;
+            padding: 8px;
+            display: block;
+            border-top: 1px solid black;
+        }
+
+        .dropdown-content a:hover {
+            background-color:white;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="icon_one border">
+                <p>ShelfSpace</p>
+            </div>
+            <div class="about_us border">
+                <a href="#about_uss">About</a>
+            </div>
+            <div class="contact-us border">
+                <a href="#contact_us">Contact</a>
+            </div>
+            <div class="search_bar">
+                <input id="searchInput" onkeyup="searchSubjects()" placeholder="Search" class="search_button">
+                <div class="search_icon">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+            </div>
+            <div class="profile border">
+                <a href="javascript:void(0);" onclick="toggleDropdown()"><i class="fa-solid fa-user"></i></a>
+                <div id="dropdown" class="dropdown-content">
+                    <p id="userName">Username: Loading...</p>
+                    <a href="javascript:void(0);" onclick="logout()">Log Out</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="slogan">
+        <h1>"The Material You Need, When You Need It"</h1>
+    </div>
+
+    <!-- Content and Subjects -->
+    <div class="content">
+        <div id="about_uss">
+            <div class="logo">
+                <img src="./images/logo.webp" alt="logo">
+            </div><br>
+            <h3>ABOUT US</h3><br>
+            <p>Welcome to ShelfSpace, your one-stop destination for all your e-book needs. We understand the struggle of finding relevant study materials in one place, which is why we created a platform specifically designed for students. Whether you’re looking for textbooks, research papers, or reference materials, we’ve got you covered.
+                <br><br>
+                At ShelfSpace, we aim to make learning more accessible and convenient. Our collection is constantly updated with the latest e-books, covering a wide range of subjects to help you succeed in your academic journey. With a simple, user-friendly interface, finding and accessing the right material has never been easier.</p>
+        </div>
+        <div class="material">
+            <h1>SUBJECTS :</h1>
+            <br>
+            <div class="subject_section">
+                <div class="box">
+                    <div class="box_content">
+                        <div class="box_image">
+                            <img src="./images/login_section.jpg" alt="subject picture">
+                        </div><br>
+                        <a href="./app.html">Advanced Programming Practice<h2>APP</h2></a>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="box_content">
+                        <div class="box_image">
+                            <img src="./images/login_section.jpg" alt="subject picture"></div><br>
+                        <a href="./os.html">Operating System<h2>OS</h2></a>
+                    </div>    
+                </div>
+                <div class="box">
+                    <div class="box_content">
+                        <div class="box_image">
+                            <img src="./images/login_section.jpg" alt="subject picture"></div><br>
+                        <a href="./coa.html">Computer Organisation and Architecture<h2>COA</h2></a>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="box_content">
+                        <div class="box_image">
+                            <img src="./images/login_section.jpg" alt="subject picture"></div><br>
+                        <a href="./dsa.html">Data Structures and Algorithm<h2>DSA</h2></a>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="box_content">
+                        <div class="box_image">
+                            <img src="./images/login_section.jpg" alt="subject picture"></div><br>
+                        <a href="./maths.html">Transform And Boundary Values<h2>Maths</h2></a>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="box_content">
+                        <div class="box_image">
+                            <img src="./images/login_section.jpg" alt="subject picture"></div><br>
+                        <a href="./dtm.html">Design Thinking and Methodology<h2>DTM</h2></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div id="contact_us">
+            <h4>CONTACT US:</h4>
+            <a href="akamresh78963@gmail.com">E-mail: shelfspace@gmail.com</a>
+            <a href="#">Instagram: <i class="fa-brands fa-instagram"></i></a>  
+            <a href="www.linkedin.com/in/akamresh">LinkedIn: <i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#">Twitter: <i class="fa-brands fa-twitter"></i></a>
+            <br>
+            ShelfSpace ©️ 2024 | All Rights Reserved
+        </div>
+    </footer>
+
+    <!-- Search and User Details Functionality -->
+    <script>
+        function searchSubjects() {
+            let input = document.getElementById('searchInput').value.toLowerCase();
+            let boxes = document.getElementsByClassName('box');
+            for (let i = 0; i < boxes.length; i++) {
+                let subjectName = boxes[i].getElementsByTagName('h2')[0];
+                if (subjectName) {
+                    let txtValue = subjectName.textContent || subjectName.innerText;
+                    boxes[i].style.display = txtValue.toLowerCase().includes(input) ? "" : "none";
+                }
+            }
+        }
+
+        // Toggle and Fetch User Details
+        function toggleDropdown() {
+            let dropdown = document.getElementById('dropdown');
+            dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block';
+
+            if (dropdown.style.display === 'block') {
+                fetchUserDetails();
+            }
+        }
+
+        function fetchUserDetails() {
+            fetch('getUserDetails.php')
+                .then(response => response.json())
+                .then(data => {
+                    if (data.success) {
+                        document.getElementById('userName').innerText = `Username: ${data.username}`;
+                    } else {
+                        document.getElementById('userName').innerText = 'Username: Not available';
+                        alert(data.message || 'Failed to fetch user details.');
+                    }
+                })
+                .catch(error => {
+                    console.error('Error fetching user details:', error);
+                    document.getElementById('userName').innerText = 'Username: Unknown';
+                });
+        }
+
+        function logout() {
+            // Perform logout action
+            window.location.href = './login.html';
+        }
+    </script>
+</body>
+</html>

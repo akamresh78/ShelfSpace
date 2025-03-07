@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url("./images/login.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-box {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px 10px rgba(1, 1, 1, 0.543);
+    width: 85%;
+    height: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.form-container {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.welcome{
+    margin-bottom: 10px; 
+    padding-bottom: 50px;
+}
+
+.welcome h2 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+     margin-top: 10px;
+     margin-bottom: 15px;
+    font-size: 40px;
+    color: #333;
+}
+
+.welcome p {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.input-group {
+    width: 300%;
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #333;
+}
+
+.input-group input {
+    width: 80%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+.checkbox-group input {
+    margin-right: 10px;
+}
+
+.button-container {
+    width: 80%;
+}
+
+.login-button {
+    width: 300%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.login-button:hover {
+    background-color: #109ad1b4;
+}
+
+.logo {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 50%;
+    border:2px dotted black;
+}
+.login-section a{
+    color:blue;
+    text-decoration: underline;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+@media(max-width:450px){
+    .login-button {
+        width:100%;
+        font-size:15px;
+    }
+    .input-group{
+        width:200%;
+        font-size:15px;
+
+    }
+    .logo{
+        width:40%;
+        position:relative;
+        left:10px;
+    }
+}
